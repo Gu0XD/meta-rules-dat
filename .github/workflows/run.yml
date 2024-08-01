@@ -91,6 +91,9 @@ jobs:
           
       - name: Add proxy, direct and reject domains from "hidden" branch to appropriate temp files
         run: |
+          ls ./resouces/direct.txt
+          pwd
+          ls -l ./resouces/direct.txt
           cat ./resouces/direct.txt
           tail -n 10 temp-direct.txt
           cat ./resouces/proxy.txt >> temp-proxy.txt
