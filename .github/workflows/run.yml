@@ -93,6 +93,10 @@ jobs:
         run: |
           cat ./resouces/proxy.txt >> temp-proxy.txt
           cat ./resouces/direct.txt >> temp-direct.txt
+          if ! grep -Fxq "$(cat ./resources/direct.txt)" temp-direct.txt; then
+            echo "direct.txt content verification failed!"
+            exit 1
+          fi
           # cat reject.txt >> temp-reject.txt
 
       - name: Sort and generate redundant lists
