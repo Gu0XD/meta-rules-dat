@@ -1,5 +1,5 @@
-*.zanao.com
-*.zanoa.cn
+c.zanao.com
+c.zanoa.cn
 emby2.lilyya.xyz
 pemby.127066.xyz
 pemby.127255.best
