@@ -3,8 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "30 22 * * *" # 6:30 AM UTC+8
-    paths-ignore:
-      - "**/README.md"
 jobs:
   build:
     runs-on: ubuntu-latest
